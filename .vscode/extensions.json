@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "mechatroner.rainbow-csv",
+        "ms-vscode.atom-keybindings",
+        "swallow.geojson-io-for-vscode",
+        "mhutchie.git-graph",
+        "yzane.markdown-pdf",
+        "bierner.markdown-preview-github-styles",
+        "mushan.vscode-paste-image"
+    ]
+}

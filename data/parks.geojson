@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "jotr",
+        "name": "Joshua Tree National Park",
+
+        "marker-color": "#ff0000",
+        "marker-size": "small"
+      },
+      "geometry": {
+        "coordinates": [-115.83225389521269, 33.93764725736568],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "romo",
+        "name": "Rocky Mountain National Park",
+        "marker-color": "#00ff00",
+        "marker-size": "medium"
+      },
+      "geometry": {
+        "coordinates": [-105.70382688477247, 40.3446520172958],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "yell",
+        "name": "Yellowstone National Park",
+        "marker-color": "#0000ff",
+        "marker-size": "large"
+      },
+      "geometry": {
+        "coordinates": [-110.54826776748976, 44.624232031925914],
+        "type": "Point"
+      }
+    }
+  ]
+}
