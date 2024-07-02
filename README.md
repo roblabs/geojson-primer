@@ -41,11 +41,16 @@ A collection of Node based GeoJSON tools that plays well with Visual Studio Code
 
 #### Visualize at GeoJSON.io
 
+* You can visualize your GeoJSON at <https://geojson.io>
+
 ```bash
+# from a command line, open GeoJSON on disk
 geojsonio data/parks.geojson
 ```
 
 #### Visualize with NPS Park Tiles
+
+* You can visualize your GeoJSON at <https://RobLabs.com/geojson> or inspect the [source for a GeoJSON visualizer](https://github.com/roblabs/geojson) to host on your own site.
 
 ```bash
 # Pass in the domain of where to open your GeoJSON
