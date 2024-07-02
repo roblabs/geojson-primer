@@ -1,20 +1,22 @@
 {
-  "name": "awesome-geojson",
-  "version": "1.0.0",
+  "name": "geojson-tools",
+  "version": "2.78.314",
   "description": "GeoJSON tools you can use...today",
   "main": "",
   "scripts": {
     "global:@mapbox/geojsonhint": "npm -g i @mapbox/geojsonhint",
-    "global:geojson-precision": "npm -g i geojson-precision",
+    "global:geojson-precision-ts": "npm -g i geojson-precision-ts",
     "global:geojson-random": "npm -g i geojson-random",
     "global:geojson2csv ": "npm -g i geojson2csv",
     "global:geojsonio-cli": "npm -g i geojsonio-cli",
-    
-    "npx:@mapbox/geojsonhint": "npx geojsonhint",
-    "npx:geojson-precision": "npx geojson-precision",
-    "npx:geojson-random": "npx geojson-random",
-    "npx:geojson2csv ": "npx geojson2csv",
-    "npx:geojsonio-cli": "npx geojsonio-cli"
+
+    "npx:geojson-random": "npx geojson-random 3",
+
+    "test:geojson-precision-ts": "npx geojson-precision --precision 7 data/parks.geojson data/tmp.geojson",
+    "post:test:geojson-precision": "prettier --write data/tmp.geojson",
+    "test:geojson2csv": "npx geojson2csv data/parks.geojson > data/parks.csv",
+    "test:geojsonio-cli:gio": "geojsonio data/parks.geojson",
+    "test:geojsonio-cli:nps": "geojsonio data/parks.geojson --domain=https://roblabs.com/geojson"
   },
   "keywords": [
     "GeoJSON",
@@ -22,12 +24,13 @@
     "vsc"
   ],
   "author": "RobLabs.com <roblabs@users.noreply.github.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@mapbox/geojsonhint": "^3.3.0",
-    "geojson-precision": "^1.0.0",
+    "geojson-precision-ts": "^1.2.8",
     "geojson-random": "^0.5.0",
     "geojson2csv": "^0.1.1",
-    "geojsonio-cli": "^0.2.3"
+    "geojsonio-cli": "^0.2.3",
+    "prettier": "^3.3.2"
   }
 }
