@@ -1,3 +1,8 @@
+<a href="https://roblabs.com"><img src="https://avatars.githubusercontent.com/u/118112" style="border-radius:4px" width="20" /></a>
+<a href="https://github.com/roblabs/geojson-tools"><img src="https://img.shields.io/github/stars/roblabs/geojson-tools?label=Source&amp;style=social" alt="GitHub Repo Source" /></a>
+<img src="https://img.shields.io/github/license/roblabs/geojson-tools" alt="GitHub" />
+[![vscode.dev](https://img.shields.io/badge/VSCode-.dev-blue)][vscode.dev]
+
 # 🛠️ GeoJSON Tools 
 
 A collection of Node based GeoJSON tools that plays well with Visual Studio Code.
@@ -47,3 +52,7 @@ geojsonio data/parks.geojson
 geojsonio data/parks.geojson --domain=https://roblabs.com/geojson"
 ```
 
+---
+
+<!-- Markdown Relative Links --> 
+[vscode.dev]: https://vscode.dev/github/roblabs/geojson-tools "A lightweight version of VS Code running fully in the browser."
