@@ -37,7 +37,7 @@ A collection of Node based GeoJSON tools that plays well with Visual Studio Code
 
 ### 🔬 Visualizing GeoJSON
 
-[geojsonio-cli] : https://www.npmjs.com/package/geojsonio-cli "Use the command line to open GeoJSON"
+* [geojsonio-cli] : https://www.npmjs.com/package/geojsonio-cli "Use the command line to open GeoJSON"
 
 #### Visualize at GeoJSON.io
 
@@ -54,7 +54,7 @@ geojsonio data/parks.geojson
 
 ```bash
 # Pass in the domain of where to open your GeoJSON
-geojsonio data/parks.geojson --domain=https://roblabs.com/geojson"
+geojsonio data/parks.geojson --domain=https://roblabs.com/geojson
 ```
 
 ---
