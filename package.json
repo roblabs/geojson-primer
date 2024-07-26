@@ -1,14 +1,22 @@
 {
-  "name": "geojson-tools",
+  "name": "geojson-primer",
   "version": "2.78.314",
-  "description": "GeoJSON tools you can use...today",
+  "description": "A primer on GeoJSON tools you can use with Visual Studio Code.",
+  "bin": {
+    "geojson-check": "dist/geojson-check.js"
+  },
   "main": "",
   "scripts": {
+    "build": "npx tsc -b ./tsconfig.json",
+    "postbuild": "npx pnpm link --global",
+    "cmdcheck": "geojson-check data/parks-list-npsgov.geojson",
+
     "global:@mapbox/geojsonhint": "npm -g i @mapbox/geojsonhint",
     "global:geojson-precision-ts": "npm -g i geojson-precision-ts",
     "global:geojson-random": "npm -g i geojson-random",
     "global:geojson2csv ": "npm -g i geojson2csv",
     "global:geojsonio-cli": "npm -g i geojsonio-cli",
+    "global:pnpm": "npm -g i pnpm",
 
     "npx:geojson-random": "npx geojson-random 3",
 
@@ -17,6 +25,10 @@
     "test:geojson2csv": "npx geojson2csv data/parks.geojson > data/parks.csv",
     "test:geojsonio-cli:gio": "geojsonio data/parks.geojson",
     "test:geojsonio-cli:nps": "geojsonio data/parks.geojson --domain=https://roblabs.com/geojson"
+
+    , "globallink": "pnpm link --global"
+    , "globalunlink": "pnpm unlink --global"
+    , "globallist": "pnpm list --global  "
   },
   "keywords": [
     "GeoJSON",
@@ -32,5 +44,13 @@
     "geojson2csv": "^0.1.1",
     "geojsonio-cli": "^0.2.3",
     "prettier": "^3.3.2"
+  },
+  "devDependencies": {
+    "@placemarkio/check-geojson": "^0.1.12",
+    "@types/geojson": "^7946.0.14",
+    "@types/node": "^20.14.12",
+    "commander": "^12.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }
