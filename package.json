@@ -25,10 +25,6 @@
     "test:geojson2csv": "npx geojson2csv data/parks.geojson > data/parks.csv",
     "test:geojsonio-cli:gio": "geojsonio data/parks.geojson",
     "test:geojsonio-cli:nps": "geojsonio data/parks.geojson --domain=https://roblabs.com/geojson"
-
-    , "globallink": "pnpm link --global"
-    , "globalunlink": "pnpm unlink --global"
-    , "globallist": "pnpm list --global  "
   },
   "keywords": [
     "GeoJSON",

@@ -5,24 +5,26 @@
 
 # 🛠️ GeoJSON Primer 
 
-A primer on GeoJSON tools you can use with Visual Studio Code.
+A primer[<sup>1</sup>](#about) on GeoJSON tools you can use with Visual Studio Code.
 
 ## 🔨Visual Studio Code Extensions
 
-[GeoJSON.IO for VSCode] : https://marketplace.visualstudio.com/items?itemName=swallow.geojson-io-for-vscode "Create, Edit and Preview GeoJSON Data In VSCode"
+[GeoJSON.IO for VSCode] : <https://marketplace.visualstudio.com/items?itemName=swallow.geojson-io-for-vscode> "Create, Edit and Preview GeoJSON Data In VSCode"
 
-[Rainbow CSV] : https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv "Highlight CSV and TSV files"
+[Rainbow CSV] : <https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv> "Highlight CSV and TSV files"
 * Plus other useful VS Code extensions
     * Markdown editing (PDF, paste image, GitHub style preview)
     * Git Graph
 
 ---
 
-## 🪓 GeoJSON Data
+## GeoJSON Data
 
 ### 🔧 Creating GeoJSON
 
-[geojson-random] : https://www.npmjs.com/package/geojson-random "Generate random GeoJSON features"
+[geojson-random] : <https://www.npmjs.com/package/geojson-random> "Generate random GeoJSON features"
+
+Generate three random GeoJSON features
 
 ```bash
 geojson-random 3  > 3.geojson
@@ -32,7 +34,9 @@ geojson-random 3  > 3.geojson
 
 ### 🖋️ Prettier
 
-[prettier] : https://www.npmjs.com/package/prettier "Prettier is an opinionated code formatter"
+[prettier] : <https://www.npmjs.com/package/prettier> "Prettier is an opinionated code formatter"
+
+Make a GeoJSON file 'prettier' or easier to read
 
 ```bash
 prettier --write 3.geojson
@@ -42,7 +46,9 @@ prettier --write 3.geojson
 
 ### 🪚 Converting GeoJSON
 
-[geojson2csv] : https://www.npmjs.com/package/geojson2csv "converting a geojson file to a csv file"
+[geojson2csv] : <https://www.npmjs.com/package/geojson2csv> "converting a geojson file to a csv file"
+
+Convert GeoJSON to CSV
 
 ```bash
 geojson2csv data/parks.geojson
@@ -52,17 +58,24 @@ geojson2csv data/parks.geojson
 
 ### 🗜️ Precision for GeoJSON
 
-[geojson-precision-ts] : https://www.npmjs.com/package/geojson-precision-ts "Remove meaningless precision from GeoJSON"
+[geojson-precision-ts] : <https://www.npmjs.com/package/geojson-precision-ts> "Remove meaningless precision from GeoJSON"
 
 ---
 
 ### ⚙️ Validate GeoJSON
 
-[@mapbox/geojsonhint] : https://www.npmjs.com/package/@mapbox/geojsonhint "complete, fast, standards-based validation for geojson"
+[@mapbox/geojsonhint] : <https://www.npmjs.com/package/@mapbox/geojsonhint> "complete, fast, standards-based validation for geojson"
+
+Use `@mapbox/geojson` to look for hints on your GeoJSON
 
 ```bash
-# no error is good
 geojsonhint 3.geojson
+```
+
+or, use `@placemarkio/check-geojson` to look to check your GeoJSON
+
+```bash
+geojson-check 3.geojson
 ```
 
 ---
@@ -71,7 +84,7 @@ geojsonhint 3.geojson
 
 From the command line, you can push your GeoJSON to a browser that can help you visualize your GeoJSON.
 
-[geojsonio-cli] : https://www.npmjs.com/package/geojsonio-cli "Use the command line to open GeoJSON"
+[geojsonio-cli] : <https://www.npmjs.com/package/geojsonio-cli> "Use the command line to open GeoJSON"
 
 #### Visualize at GeoJSON.io
 
@@ -96,13 +109,15 @@ geojsonio data/parks.geojson --domain=https://roblabs.com/geojson
 ---
 
 <!-- Markdown Relative Links --> 
-[vscode.dev]: https://vscode.dev/github/roblabs/geojson-primer "A lightweight version of VS Code running fully in the browser"
+[vscode.dev]: <https://vscode.dev/github/roblabs/geojson-primer> "A lightweight version of VS Code running fully in the browser"
 
+
+### About
+
+Created in summer 2024 as a way to teach others how to use GeoJSON, Node, and Visual Studio Code.  Use the random tools to generate GeoJSON.  Use 'prettier' to format GeoJSON.  Methods to convert GeoJSON properties to CSV for further inspection.
 
 <small>
-primer | ˈprimər
-
-noun
-
-*"an elementary textbook that serves as an introduction to a subject of study or is used for teaching children to read"*
+ˈprimər, noun  <i>"an elementary textbook that serves as an introduction to a subject of study or is used for teaching children to read"</i>
 </small>
+
+[🔝](#geojson-data)
