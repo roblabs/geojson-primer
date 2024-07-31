@@ -3,7 +3,8 @@
   "version": "2.78.314",
   "description": "A primer on GeoJSON tools you can use with Visual Studio Code.",
   "bin": {
-    "geojson-check": "dist/geojson-check.js"
+    "geojson-check": "dist/geojson-check.js",
+    "central-parkget": "dist/central-parkget.js"
   },
   "main": "",
   "scripts": {
